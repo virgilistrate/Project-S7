@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backoffice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="min-vh-100 d-flex flex-column">
+    <h1 class="text-center my-3">EpicParfumes</h1>
+    <h3 class="text-center my-3">Pagina di amministrazione</h3>
+
+    <!--inizio form-->
+    <main class="flex-grow-1">
+      <div class="container">
+        <div class="row justify-content-center my-3">
+          <div class="col col-12 col-md-8 col-lg-6">
+            <!-- FORM PER LA GESTIONE DEI PRODOTTI-->
+            <form id="product-form">
+              <!-- CAMPO NOME -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome Profumo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name-input"
+                  placeholder="nome del profumo"
+                  required
+                />
+              </div>
+              <!-- CAMPO DESCRIZIONE -->
+              <div class="mb-3">
+                <label for="description" class="form-label"
+                  >Descrizione profumo</label
+                >
+                <textarea
+                  class="form-control"
+                  id="description"
+                  aria-describedby="description-input"
+                  placeholder="note olfattive ecc..."
+                  required
+                ></textarea>
+              </div>
+              <!--CAMPO BRAND-->
+              <div class="mb-3">
+                <label for="brand" class="form-label">Brand profumo</label>
+                <textarea
+                  class="form-control"
+                  id="brand"
+                  aria-describedby="brand-input"
+                  placeholder="tom ford, armani ecc.."
+                  required
+                ></textarea>
+              </div>
+              <!-- CAMPO IMMAGINE-->
+              <div class="mb-3">
+                <label for="immagine" class="form-label">link immagine</label>
+                <textarea
+                  class="form-control"
+                  id="immagine"
+                  aria-describedby="description-input"
+                  placeholder="www.google.com/immagini..."
+                  required
+                ></textarea>
+              </div>
+              <!-- CAMPO PREZZO -->
+              <div class="mb-3">
+                <label for="price" class="form-label">Prezzo profumo</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="price"
+                  aria-describedby="price-input"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">INVIA</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <h1 class="text-center mx-5">Prodotti in Stock</h1>
+
+    <div class="flex-grow-1 mt-5">
+      <div class="container">
+        <div
+          class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-4 g-3"
+          id="backoffice-row"
+        >
+          <!--spazio card-->
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="bg-dark text-white pt-3 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 text-center">
+            <p>E-commerce - <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--collegamenti-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="backoffice.js"></script>
+  </body>
+</html>
